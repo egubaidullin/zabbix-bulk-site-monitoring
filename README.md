@@ -21,5 +21,4 @@ To run this script, Python 3 and the PyZabbix library must be installed.
 1. Replace the values of the variables `ZABBIX_SERVER`, `ZABBIX_USER`, `ZABBIX_PASSWORD`, `ZABBIX_HOST`, `APPLICATION_NAME`, and `SITES_FILE` with the appropriate values for your Zabbix server and the file containing the list of websites to monitor.
 2. Create a file with the name specified in the `SITES_FILE` variable and add the list of websites you want to monitor, one per line.
 3. Run the script using Python 3.
-   
-**Note:** It is necessary for the website to be accessible via HTTPS, as there were errors when accessing it via HTTP.
+

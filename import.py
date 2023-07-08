@@ -5,6 +5,7 @@ ZABBIX_USER = 'your-username'
 ZABBIX_PASSWORD = 'your-password'
 ZABBIX_HOST = 'your-hostname'
 APPLICATION_NAME = 'application-name'
+SITES_FILE = 'sites-list'
 
 # Connect to Zabbix API
 zapi = ZabbixAPI(ZABBIX_SERVER)
@@ -17,7 +18,7 @@ if not host:
 hostid = host[0]["hostid"]
 
 # Read list of sites from file
-with open('sites.txt', 'r') as f:
+with open(SITES_FILE, 'r') as f:
     sites = f.read().splitlines()
 
 # Create web scenario and trigger for each site

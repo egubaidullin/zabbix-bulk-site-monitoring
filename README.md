@@ -9,7 +9,7 @@ The script accepts the following arguments:
 - `action` - Required, can be `add`, `disable` or `delete`  
 - `-f, --sites-file` - Path to the file with the list of websites
 
-Example: python script.py add -f sites.txt
+Example: python zabbix-bulk_script.py add -f sites.txt
 
 This will add monitoring for websites listed in sites.txt file.
 
